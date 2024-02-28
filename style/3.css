@@ -1,0 +1,292 @@
+@charset "utf-8";
+
+/* CSS Document */
+*{font-family: 'Courier New', Courier, monospace;}
+#typing {
+	width: 0ch;
+	float: left;
+	font-family: sans-serif;
+	font-weight: bold;
+	overflow: hidden;
+	white-space: nowrap;
+	animation: typing 5s steps(40) 1s infinite alternate;
+}
+
+@keyframes typing {
+	from {
+		width: 0ch;
+	}
+
+	to {
+		width: 50ch;
+	}
+}
+
+/* img {
+	animation-duration: 4s;
+	animation-name: slidein;
+	animation-iteration-count: 1;
+	animation-direction: alternate;
+	
+}
+
+@keyframes slidein {
+	from {
+		margin-left: 0%;
+		width: 0%;
+	}
+
+	to {
+		margin-left: 0%;
+		width: 20%;
+	}
+} */
+
+
+	nav {
+		text-align: right;
+		list-style-type: none;
+		padding: 0;
+		margin : auto;
+		width: 72%;
+		background-color: transparent;
+		border-style: dotted;
+		border-color: transparent;
+		align-self: center;
+		justify-content: space-between;
+	}
+	body,html{
+		height: 100%;
+	}
+	.top{
+        
+        background-color: darkblue;
+        margin: 0%;
+        height: 10vh;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: space-evenly;        
+	}    
+
+	a {
+		
+		text-align: center;
+		float: space-between;
+		text-decoration:aqua;
+		color: rgb(255, 255, 255);
+		background-color: rgb(0, 150, 187);
+		padding-top: 0.2em;
+		padding-bottom: 0.2em;
+		padding-left: 0.6em;
+		padding-right: 0.6em;
+		border: solid;
+		border-width: 1px;
+		border-color: white;
+		margin-top: 10%;
+		height: 50%;
+	}
+
+	a:hover {
+		background-color: orange;
+		box-shadow: #797979;
+	}
+	h1 {
+		font-size: 1.5em;
+		
+		text-align: left;
+		color: whitesmoke;
+		background-color: transparent;
+		margin: 10px 45px;
+		
+	}
+	/* .p-wrap{
+		display:flex;
+		justify-self: start;
+		height: 80%;
+		width: 50%;
+
+	}
+
+	.p-wrap > *{
+		width: 50%;
+	} */
+
+	.content{
+		display: flex;
+		flex-direction: column;
+		justify-self: auto;
+		text-align: left;
+		height: auto;
+		
+	}
+	.content p{
+		height: auto;
+		border: 1px solid black;
+		border-radius: 4px;
+		background-color: aliceblue;
+	}
+	#scor tr, td{
+		margin: 0 auto ;
+	}
+	table, tr ,td{
+		text-align: center;
+		border: 1px solid black;
+		border-radius: 4px;
+		border-collapse: collapse;
+		border-color: black;
+		background-color: aliceblue;
+		
+	}
+
+
+	aside {
+		width: 80%;
+		/* background-color: red; */
+		justify-content: center	;
+	}
+	.pic1{
+		border: #797979;
+		justify-content: space-evenly;
+		
+		width: 90%;
+		margin: 2px auto;
+	}
+	.pic2 img{
+		width: 70%;
+		margin: 2px auto;
+		border: 5px solid #797979;
+		border-radius: 10%;
+
+	}
+	.pic1 img{
+		width: 70%;
+		margin: 2px auto;
+		border: 5px solid #797979;
+		border-radius: 10%;
+		
+	}
+	aside.my-img {
+		width: 30%;
+		margin-left: 5%;
+		/* background-color: red; */
+		
+	}
+
+	main {
+		margin: 10px;
+		background-color: lightcyan;
+		padding: 10px;
+		border-style: solid;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	main > * {
+		width: 48%;
+	}
+
+	
+
+	h4 {
+		color: darkblue;
+	}
+
+	footer {
+		color: white;
+		background-color: darkslateblue;
+		float: left;
+		font-style: italic;
+		margin-top: 10px;
+		width: 100%;
+	}
+
+
+@media screen and (max-width: 1023px) {
+	nav {
+		float: left;
+		list-style-type: none;
+		padding: 0;
+		margin-bottom: 10px;
+		width: 100%;
+		background-color: darkgray;
+		border-style: solid;
+		border-color: darkgray;
+	}
+
+	a {
+		float: left;
+		text-decoration: none;
+		color: white;
+		background-color: blue;
+		padding-top: 0.2em;
+		padding-bottom: 0.2em;
+		padding-left: 0.6em;
+		padding-right: 0.6em;
+		border: solid;
+		border-width: 1px;
+		border-color: white;
+	}
+
+	a:hover {
+		background-color: orange;
+	}
+
+	h1 {
+		color: white;
+		background-color: olive;
+	}
+
+	img {
+		float: left;
+		width: 40%;
+		padding-right: 10px;
+		margin-right: 5%;
+		margin-top: 15px;
+	}
+
+	/* fit the image bellow the text box */
+	main {
+		margin: 10px;
+		background-color: lightcyan;
+		float: left;
+		padding: 10px;
+		border-style: solid;
+	}
+
+	p {
+		float: left;
+		width: 94%;
+		border-style: solid;
+		padding: 10px;
+		background-color: antiquewhite;
+	}
+
+	table {
+		margin: auto;
+		width: 70%;
+		height: 100px;
+		background-color: lightblue;
+	}
+
+	/* center the table to the webpage */
+	h4 {
+		color: darkblue;
+	}
+
+	footer {
+		color: white;
+		background-color: darkslateblue;
+		float: left;
+		font-style: italic;
+		margin-top: 10px;
+		width: 100%;
+	}
+
+	body {
+		font-size: 120%;
+		/* Increase text font size on a phone browser */
+	}
+}
