@@ -8,37 +8,72 @@
 </head>
 
 <body>
-	<form id="survey" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php">
-		<div class="top">
+	<div class="top">
+		
+		<header>
+			<h1>Animations</h1>
+		</header>
+		
+		<nav>
+			<a href="page_1.html">Home</a>
+			<a href="page_2.html">Background</a>
+			<a href="page_3.html">Achievement & Major Schedule</a>
+			<a href="page_4.html">Animations</a>
+		</nav>
+	</div>
+	<div class="mainblock">
+		<form id="survey" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php">		
+			<section>
+				<h4>Animations implemented</h4>
+				<ul>
+					<li>Image slide-in in page 1,2(translateX)</li>
+					<li>Animation: word-typing: "My learning schedule at Swinburne " in page 3</li>
+				</ul>
 			
-			<header>
-				<h1>Achievement & Major Schedule</h1>
-			</header>
 			
-			<nav>
-				<a href="page_1.html">Home</a>
-				<a href="page_2.html">Background</a>
-				<a href="page_3.html">Achievement & Major Schedule</a>
-				<a href="page_4.html">Animations</a>
-			</nav>
+				<p>
+					<label>What are your thoughts on my initial web pages? Feel free to share your thoughts!</label>
+					<br />
+					<input name="comment" type="text" id="comment" placeholder="Comment here...">
+				</p>
+			</section>
+
+			<div class="btnsection">
+				<input type="submit" value="Submit" />
+				<input type="reset" value="Reset" />
+			</div>
+		</form>
+	</div>
+	<footer class="footer">
+	<div class="about-col">
+			<label for="footer-email">Write your email below to get notify!</label>
+			<input type="email" id="footer-email" placeholder=" Email address">
 		</div>
-		<section>
-			<h4>Animations implemented</h4>
-			<ul>
-				<li>Image slide-in in page 1,2,3</li>
-				<li>Text-typing: "My learning schedule at Swinburne Online" in page 3</li>
+		<div class="links-col">
+			<h2>Links</h2>
+			<ul>        
+				<li>Contacts</li>
 			</ul>
-		</section>
-		<p>
-			<lable>What do you think about my first web pages so far? Feel free to bellow!</lable>
-			<br />
-			<input type="text" id="comment" placeholder="Comment here...">
-		</p>
-		<p>
-			<input type="submit" value="Submit" />
-			<input type="reset" value="Reset" />
-		</p>
-	</form>
+		</div>
+		<div class="contact-col">
+			<h2>Contacts</h2>
+			<ul>
+				<li>
+					<span class="fa-solid fa-phone"></span>
+					<span>+84 967784432</span>
+				</li>
+				<li>
+					<span class="fa-solid fa-envelope"></span>
+					<span>vum3837@gmail.com</span>
+				</li>
+				<li>
+					<span class="fa-solid fa-location-pin"></span>
+					<span>50 Nam Cao </span>
+				</li>
+			</ul>
+		</div>
+		
+	</footer>
 </body>
 
 </html>
